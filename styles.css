@@ -64,3 +64,8 @@
   color: #fff;
   text-decoration: none;
 }
+
+.display-qrcode {
+  margin: 0 50px 30px;
+  color: transparent;
+}

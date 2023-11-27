@@ -9,15 +9,19 @@
 </head>
 
 <body>
-
   <div class="container">
     <div class="qr-code-box">
       <h3 class="input-lebel"> Enter Your Text or url</h3>
-      <input type="text" placeholder="Write your Text or url" class="input-box">
-      <button class="qr-button">Generate QR Code</button>
+      <input type="text" placeholder="Write your Text or URL" class="js-input-box input-box">
+      <div id="js-qrcode" class="display-qrcode"></div>
+      <button class="js-button qr-button">Generate QR Code</button>
     </div>
   </div>
+
   <script src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
