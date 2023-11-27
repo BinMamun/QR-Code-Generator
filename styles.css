@@ -4,3 +4,31 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: url("./images/pexels-photo-3785931.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.qr-code-box {
+  width: 100%;
+  max-width: 450px;
+  height: 450px;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #D1B464 30%, #5d4a1f 70%, #5d4a1f 0%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+  padding: 50px;
+}
+
+/* .input-lebel {
+  color: white;
+  font-size: 20px;
+} */
