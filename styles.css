@@ -36,16 +36,39 @@
 .input-box {
   width: 100%;
   height: 40px;
-  border: none;
+  border: 1px solid #d08b31;
   outline: none;
   padding: 15px;
   border-radius: 5px;
-  margin-bottom: 30px;
+}
+
+.error-shake {
+  animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-2px);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(2px);
+  }
 }
 
 .qr-button {
   width: 100%;
   height: 40px;
+  font-weight: 600;
+  font-size: 13px;
   border: none;
   border-radius: 5px;
   background: linear-gradient(to right, #d08b31 0%, #febb63 51%, #d78d2c 100%);
@@ -66,6 +89,29 @@
 }
 
 .display-qrcode {
-  margin: 0 50px 30px;
+  width: 200px;
+  margin: 20px;
   color: transparent;
+  border-radius: 5px;
+}
+
+.add-animation {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.display-qrcode img {
+  padding: 5px;
+  margin: 0 auto 0;
+  max-height: 200px;
+  border: 1px solid #D1B464;
 }
